@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/tablelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:stretchColumns="*"
+    android:background="@android:color/white"
+
+   >
+<!--tableRow0-->
+    <TableRow
+        android:id="@+id/tableRow0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/queryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_span="2"
+            android:background="@drawable/border1"
+            android:hint="@string/queryPrompt"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:autofillHints="text"
+            android:textSize="23sp"
+            android:gravity="left"
+            android:paddingLeft="6dp"
+            android:paddingTop="15dp"
+            />
+
+
+
+
+    </TableRow>
+    <!--tableRow1-->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/tagEditText"
+            android:layout_height="wrap_content"
+            android:hint="@string/tagPrompt"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:layout_gravity="center_vertical"
+            android:autofillHints="tag"
+            android:background="@drawable/b2"
+
+
+            android:layout_width="200dp"
+            android:layout_weight="1"
+
+            android:padding="6dp"
+            android:textSize="22sp"
+
+            >
+
+
+           >
+
+
+        </EditText>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/save"
+            android:textSize="20sp"
+            >
+
+        </Button>
+
+    </TableRow>
+    <!--tableRow2-->
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/light_orange">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/taggedSearchesTextView"
+            android:text="@string/taggedSearches"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_span="2"
+            android:textSize="21sp"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+
+          >
+
+        </TextView>
+
+    </TableRow>
+    <!--tableRow3-->
+    <TableRow  android:layout_marginBottom="5dp"
+        android:id="@+id/tableRow3"
+        android:background="@color/light_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/queryScrollView"
+            android:layout_width="match_parent"
+            android:layout_span="2"
+
+            android:contentDescription="@string/queryScrollViewDescription">
+
+            <TableLayout
+                android:id="@+id/TableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:stretchColumns="*">
+            </TableLayout>
+
+
+        </ScrollView>
+
+    </TableRow>
+    <!--tableRow4-->
+    <TableRow  android:layout_marginBottom="5dp"
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/clearTagsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clearTagsButtonText"
+            android:layout_span="2"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+
+            />
+    </TableRow>
+
+</TableLayout>

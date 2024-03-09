@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_orange">#8f90</color>
+    <color name="orange">#8f90</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#F1ECEB</color>
+    <color name="gray">#DEDEDE</color>
+    <color name="transparent">#80000000</color>
+    <color name="titleTextColor">#FF0000</color> <!-- Use your desired color code -->
+
+</resources>
